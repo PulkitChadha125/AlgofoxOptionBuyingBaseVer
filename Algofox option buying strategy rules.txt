@@ -1,0 +1,5 @@
+strategy working steps
+1) Depending on mode selected NSE Or NFO it checks the stock or future price and checks for day high==open or day low == open, at the start time provided by the user in the settings
+2) once the condition is satisfied here it checks the atm call put, if o=h is hatch then the same is checked in the atm call and put, and vice versa for o=l
+3)  then stocks that pass the above criteria the otm 1 and otm 2 stricks are checked for same condition with an otm percentage buffer if the price falls in that buffer we open a call or put position in atm strike,
+4) Once the position is opened target,stoploss,tsl comes into action.
